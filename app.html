@@ -11,31 +11,7 @@
 
 </head>
 <body>
-    
-        <div class="container" ng-controller="CountryController">
-            <div class="chart-panel">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">Countries by Population(approximately)</div>
-                            <div class="panel-body">
-                                <country-population></country-population>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">Population in millions(approximately)</div>
-                            <div class="panel-body">
-                                <bar-chart countrylist="datacountries" colors="barColours" height="height" width="width">
-                                </bar-chart>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-    
+    <div ng-view></div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
