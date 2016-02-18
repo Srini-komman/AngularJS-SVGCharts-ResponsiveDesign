@@ -10,7 +10,7 @@ function countrydataservice($http)
     {
         $http({
             method: 'GET',
-            url: 'http://localhost/AngularJS_SVG_Charts_Responsive/countries_top3_population.json',
+            url: 'http://rawgit.com/Srini-komman/AngularJS-SVGCharts-ResponsiveDesign/master/countries_top3_population.json',
             cache: true
         }).success(callback)
     }
