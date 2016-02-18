@@ -1,0 +1,25 @@
+﻿<div>
+    <input type="text" ng-model="searchField" class="form-control" placeholder="Search for...">
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th><a href="" ng-click="sortField='name';reverse=!reverse;">Name</a></th>
+                <th><a href="" ng-click="sortField='population';reverse=!reverse;">Population</a></th>
+                <th><a href="" ng-click="sortField='capital';reverse=!reverse;">Capital</a></th>
+                <th><a href="" ng-click="sortField='gdp';reverse=!reverse;">GDP</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="country in datacountries | filter:searchField | orderBy:sortField:reverse">
+                <td>{{country.name}}</td>
+                <td>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" ng-model="country.population" />
+                    </div>
+                </td>
+                <td>{{country.capital}}</td>
+                <td>{{country.gdp}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

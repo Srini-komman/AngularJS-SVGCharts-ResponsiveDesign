@@ -1,0 +1,23 @@
+[
+  {
+    "name": "China",
+    "population": 1361,
+    "flagURL": "images/cn.svg",
+	"capital": "Beijing",
+	"gdp": 12261
+  },
+  {
+    "name": "India",
+    "population": 1251,
+    "flagURL": "images/in.svg",
+	"capital": "New Delhi",
+	"gdp": 4716
+  },
+  {
+    "name": "USA",
+    "population": 321,
+    "flagURL": "images/us.svg",
+	"capital": "Washington, D.C.",
+	"gdp": 16244
+  }
+]

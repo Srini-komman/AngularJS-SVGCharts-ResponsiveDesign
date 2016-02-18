@@ -1,0 +1,52 @@
+﻿/*//! country-bar-chart.css*/
+/*//! version : 1*/
+/*//! author : srini (@srini.komman)*/
+/*//! git : */
+/*//! license : MIT */
+/*//! */
+
+.chart-panel {
+    background: #F1F1F1;
+    width: 100%;
+    margin: 20px;
+    box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+text.title {
+    font-size: 1.5em;
+}
+
+.graph {
+  height: 100%;
+  width: 100%;
+}
+
+.graph .grid {
+  stroke: #000;
+  stroke-dasharray: 0;
+  stroke-width: 1;
+}
+
+.graph .rect{
+    stroke-width:0;
+    stroke-dasharray: 0;
+}
+
+.graph .dottedline{
+    
+    stroke: #999;
+    stroke-opacity:1;
+    stroke-width:1;
+    stroke-dasharray: 1,2;
+    fill:none;
+}
+
+.bar-graph-body {
+    width: 100%;
+    position: relative;
+    padding-left: 0px;
+    padding-top: 0px;
+}
